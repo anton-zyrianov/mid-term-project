@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
 body{
    background-color: #F2F4FC;
+   font-family: Roboto, serif;
 }
 
 li{
@@ -12,4 +15,31 @@ a{
 
 .navegacion{
    display: flex;
+   justify-content: space-around;
+   font-weight: 500;
+}
+
+.nav-center a{
+   color: #6B708D;
+}
+
+.nav-center a:hover{
+   color: #1037C8;
+}
+
+.nav-center li{
+   display: inline;
+   margin: 0 20px 0 20px;
+   
+   
+}
+
+.project{
+   width: 200px;
+}
+
+.contacto{
+   background-color: #1037C8;
+   padding: 10px 20px;
+   color: #fff;
 }
