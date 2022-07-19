@@ -73,6 +73,31 @@ h1{
    justify-content: center;
 }
 
+.header-img{
+   position: relative;
+}
+
+.hero-image1{
+   position: absolute;
+   top: 0%;
+   left: -20%;
+   width: 290px;
+   height: 316px;
+}
+
+.hero-image2{
+   position: absolute ;
+   top: 80%;
+   left: 50%;
+   width: 290px;
+   height: 293px;
+}
+
+.hero-image3{
+   width: 570px;
+   height: 637px;
+}
+
 #logos{
    display: flex;
    justify-content: space-around;
