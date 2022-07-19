@@ -13,6 +13,10 @@ a{
    text-decoration: none;
 }
 
+h2{
+   font-size: 40px;
+}
+
 .navegacion{
    display: flex;
    justify-content: space-around;
@@ -34,11 +38,8 @@ a{
    
 }
 
-.project{
-   width: 200px;
-}
 
-.contacto{
+.btn-azul{
    background-color: #1037C8;
    padding: 10px 20px;
    color: #fff;
@@ -54,4 +55,202 @@ h1{
    color: #6B708D;
    width: 450px;
    font-size: 20px;
+}
+
+#header{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+#logos{
+   display: flex;
+   justify-content: space-around;
+}
+
+#recent-projects{
+   display: flex;
+   flex-direction: column;
+}
+
+.cajas-global{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.caja-proyecto{
+   background-color: #ffffff;
+   width: 340px;
+   margin: 0 20px;
+   padding-bottom: 20px;
+   height: 444px;
+}
+
+.project{
+   width: 340px;
+   height: 240px;
+}
+
+.caja-proyecto a{
+   color: #1037C8;
+   font-weight: 500;
+   padding-left: 20px;
+}
+
+.caja-proyecto h4{
+   font-size: 24px;
+   font-weight: 500;
+   padding-left: 20px;
+}
+
+.caja-proyecto p{
+   font-size: 17px;
+   color: #6B708D;
+   padding-left: 20px;
+   padding-bottom: 30px;
+}
+
+
+/*#review{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   background-image:  url(/img/Orbit.png);
+   background-color: #292E47;
+   height: 622px;
+   width: 1320px;
+
+}
+
+#review img{
+   width: 150px;
+   height: 150px;
+}
+
+.emoji{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+#review .testimonio-txt{
+   font-size: 24px;
+   color: #FFC600;
+   max-width: 560px;
+   font-weight: 500;
+   text-align: center;
+   display: flex;
+   justify-content: space-around;
+   flex-direction: column;
+}
+
+#review h2{
+   color: #fff;
+   font-weight: 500;
+}
+
+.testimonio-foto{
+   display: flex;
+   flex-direction: row;
+}
+
+.foto-perfil img{
+   width: 100px;
+   height: 100px;
+   border-radius: 100px;
+}*/
+
+#review{
+   background-image:  url(/img/Orbit.png);
+   background-color: #292E47;
+   height: 622px;
+   width: 1320px;
+   position: relative;
+}
+
+#review .testimonio-txt{
+   font-size: 24px;
+   color: #FFC600;
+   max-width: 560px;
+   font-weight: 500;
+}
+
+#review h2{
+   color: #fff;
+   font-weight: 500;
+}
+
+
+.testimonio{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.testimonio-foto{
+   display: flex;
+   flex: row;
+   align-items: center;
+}
+
+.foto-perfil img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50px;
+}
+
+
+.testimonio-nombre{
+   font-size: 17px;
+   color: #A2D6F9;
+}
+
+.testimonio-empresa{
+   font-size: 13px;
+}
+
+.emoji-arriba-izquierda{
+   position: absolute;
+   left: 0%;
+   top: 0%;
+}
+
+.emoji-arriba-izquierda img{
+   width: 150px;
+   height: 150px;
+}
+
+.emoji-abajo-izquierda{
+   position: absolute;
+   left: 0%;
+   bottom: 0%;
+}
+
+.emoji-abajo-izquierda img{
+   width: 150px;
+   height: 150px;
+}
+
+.emoji-arriba-derecha{
+   position: absolute;
+   right: 0%;
+   top: 0%;
+}
+
+.emoji-arriba-derecha img{
+   width: 150px;
+   height: 150px;
+}
+
+.emoji-abajo-derecha{ 
+   position: absolute;
+   right: 0%;
+   bottom: 0%;
+}
+
+.emoji-abajo-derecha img{
+   width: 150px;
+   height: 150px; 
 }
