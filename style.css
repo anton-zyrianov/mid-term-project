@@ -35,7 +35,6 @@ h2{
    display: inline;
    margin: 0 20px 0 20px;
    
-   
 }
 
 
@@ -66,11 +65,13 @@ h1{
    
 }
 
-.header-global{
+.header-global{   
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
+   max-width: 1100px;
+   margin: 0 auto;
 }
 
 .header-img{
@@ -101,11 +102,14 @@ h1{
 #logos{
    display: flex;
    justify-content: space-around;
+   margin-top: 130px;
 }
 
 #recent-projects{
    display: flex;
    flex-direction: column;
+   margin-top: 200px;
+   padding: 0 30px;
 }
 
 .cajas-global{
@@ -202,6 +206,9 @@ h1{
    height: 622px;
    width: 1320px;
    position: relative;
+   margin-top: 200px;
+   margin-right: auto;
+   margin-left: auto;
 }
 
 #review .testimonio-txt{
@@ -289,3 +296,154 @@ h1{
    width: 150px;
    height: 150px; 
 }
+
+#our-services{
+   margin-top: 200px;
+   padding: 0px 30px;
+}
+
+.servicios-global{
+   display: flex;
+   justify-content: space-around;
+}
+
+.caja-servicio a{
+   color: #1037C8;
+   font-weight: 500;
+   margin: 30px;
+   font-size: 17px;
+}
+
+.caja-servicio h4{
+   font-size: 24px;
+   font-weight: 500;
+   margin: 30px 30px 20px;
+}
+
+.caja-servicio p{
+   font-size: 20px;
+   margin-bottom: 10px;
+   margin-top: 0px;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+.caja-servicio{
+   background-color: #fff;
+   max-width: 340px;
+   display: flex;
+   flex-direction: column;
+}
+
+.servicio-img-1{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #ECF7FF;
+   position: relative;
+   background-image: url(/img/1.svg);
+   background-position: center;
+   background-size: auto;
+   background-repeat: no-repeat;
+   margin-top: 40px;
+   margin-left:40px;
+
+}
+
+.servicio-img-2{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #ECF7FF;
+   position: relative;
+   background-image: url(/img/2.svg);
+   background-position: center;
+   background-size: auto;
+   background-repeat: no-repeat;
+   margin-top: 40px;
+   margin-left:40px;
+}
+
+.servicio-img-3{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+   background-color: #ECF7FF;
+   position: relative;
+   background-image: url(/img/3.svg);
+   background-position: center;
+   background-size: auto;
+   background-repeat: no-repeat;
+   margin-top: 40px;
+   margin-left:40px;
+}
+
+#questions{
+   width: 1320px;
+   height: 500px;
+   max-width: 1320px;
+   margin-top: 200px;
+   margin-right: auto;
+   margin-left: auto;
+   background-color: #ffc600;
+}
+
+.questions-global h3{
+   color: #292e47;
+   font-size: 40px;
+}
+
+.questions-global p{
+   font-size: 17px;
+   color: #6b708d;
+}
+
+.questions-global{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   
+}
+
+.questions-form{
+   position: relative;
+   margin-top: 50px;
+}
+
+.questions-icono{
+   position: absolute;
+   background-image: url(/img/mail.svg);
+   background-position: center;
+   background-repeat: no-repeat;
+   width: 30px;
+   height: 30px;
+   left: 4%;
+   top: 27%;
+}
+
+form input{
+   width: 393px;
+   height: 80px;
+   margin-bottom: 0px;
+   padding-left: 70px;
+   background-color: #ecf7ff;
+   color: #292e47;
+   border: 1px solid #F2F4FC;
+   font-size: 14px;
+}
+
+::placeholder{
+   color: #292e47;
+}
+
+form button{
+   height: 80px;
+   margin-left: 20px;
+   padding: 0px 90px;
+   background-color: #072ac8;
+   font-size: 17px;
+   color: #fff;
+   border: none;
+}
+
