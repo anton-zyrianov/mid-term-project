@@ -5,49 +5,74 @@
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" href="/style.css">
-         <title>Circle</title>
+         <title>Circle Agency</title>
       </head>
       <body>
-         <div id="container">
-            <nav>
+         <div class="container">
+            <nav class="desktop">
                <ul class="navegacion">
                   <li><a href="#"><img src="/img/circle.svg" alt="Circle Logo"></a></li>
                   <div class="nav-center">
-                     <li><a href="#">Home</a></li>
+                     <li><a href="./index.html" class="current">Home</a></li>
                      <li><a href="#">Projects</a></li>
                      <li><a href="#">Services</a></li>
                   </div>
                   <li><a class="btn-azul" href="#">Contact us</a></li>
                </ul>
             </nav>
+         </div>
+
+         <div class="nav-row">
+            
+            <div class="menu-logo">
+               <img src="/img/circle.svg" alt="Circle Logo"></a>
+            </div>
+
+            <div class="menu">
+              <input type="checkbox" id="btn-menu">
+              <label for="btn-menu">Menu</label>
+              <nav class="nav-burger">
+                <ul class="menu-burger">
+                  <li><a href="./index.html" class="current">Home</a></li>
+                  <li><a href="#">Projects</a></li>
+                  <li><a href="#">Services</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
 
             <section id="header">
-               <div class="header-global">
-                  <div class="header-txt">
-                     <h1>Empower Your Business With Stunning Design!</h1>
-                     <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-                     <a class="btn-azul" href="#">Get in touch</a>
-                     <a href="#">See our work</a>
+                  <div class="header-global">
+                     <div class="header-txt">
+                        <h1 class="header-title">Empower Your Business With Stunning Design!</h1>
+                        <p class="header-paragraph">Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
+                        <a class="btn-work-header" href="#">See our work</a>
+                        <a class="btn-azul-header" href="#">Get in touch</a>
+                     </div>
+                     
+                     <div class="header-img">
+                        <img class="hero-image1" src="/img/card-1.png" alt="Card 1">
+                        <img class="hero-image2" src="/img/card-2.png" alt="Card 2">
+                        <img class="hero-image3" src="/img/hero-image.png" alt="Persona">
+                     </div>
                   </div>
-                  <div class="header-img">
-                     <img class="hero-image1" src="/img/card-1.png" alt="Card 1">
-                     <img class="hero-image2" src="/img/card-2.png" alt="Card 2">
-                     <img class="hero-image3" src="/img/hero-image.png" alt="Persona">
-                  </div>
-               </div>
             </section>
 
             <section id="logos">
-               <img src="/img/airbnb-logo.svg" alt="Airbnb">
-               <img src="/img/google-logo.svg" alt="Google">
-               <img src="/img/microsoft-logo.svg" alt="Miscrosoft">
-               <img src="/img/fedex-logo.svg" alt="FedEx">
-               <img src="/img/amazon-logo.svg" alt="Amazon">
+               <!-- <div class="container"> -->
+                  <div class="logos-empresas">
+                     <img src="/img/airbnb-logo.svg" alt="Airbnb">
+                     <img src="/img/google-logo.svg" alt="Google">
+                     <img src="/img/microsoft-logo.svg" alt="Miscrosoft">
+                     <img src="/img/fedex-logo.svg" alt="FedEx">
+                     <img class="amazon" src="/img/amazon-logo.svg" alt="Amazon">
+                  </div>
+               <!-- </div> -->
             </section>
             
             <section id="recent-projects">
                <div>
-                  <h2>Recent Projects</h2>
+                  <h2 class="recent-proj">Recent Projects</h2>
                </div>
                <div class="cajas-global">
                   <div class="caja-proyecto">
@@ -106,9 +131,9 @@
                      <div class="foto-perfil">
                         <img src="/img/profile.png" alt="Perfil">
                      </div>
-                     <div>
-                        <p class="testimonio-nombre">Kristin Watson</p>
-                        <p class="testimonio-empresa">Booking.com</p>
+                     <div class="testimonio-datos">
+                        <div class="testimonio-nombre">Kristin Watson</div>
+                        <div class="testimonio-empresa">Booking.com</div>
                      </div>
                   </div>
                </div>
@@ -150,7 +175,7 @@
                   <h3>Do you have any questions?</h3>
                   <p>Let us help you!</p>
                      <div class="questions-form">
-                        <form action="">
+                        <form action="#" class="form-index">
                         <div class="questions-icono"></div>
                         <input id="e-mail" type="text" placeholder="Enter your email">
                         <button type="submit">Suscribe</button>
@@ -160,23 +185,29 @@
             </section>
 
             <footer>
-               <div>
-                  <img src="/img/circle.svg" alt="Circle Logo">
-                  <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
-               </div>
+               <div class="container">
+                  <div class="footer-section">
+                     <div class="footer-logo">
+                        <img class="footer-logo-img" src="/img/circle.svg" alt="Circle Logo">
+                        <p class="paragraph-footer">2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+                     </div>
 
-               <div>
-                  <ul>
-                     <li><a href="#">Team</a></li>
-                     <li><a href="#">Services</a></li>
-                     <li><a href="#">About Us</a></li>
-                     <li><a href="#">Press</a></li>
-                     <li><a href="#">Projects</a></li>
-                     <li><a href="#">Privacy Policy</a></li>
-                  </ul>
+                        <ul>
+                           <div class="footer-nav">
+                              <li><a href="#">Team</a></li>
+                              <li><a href="#">Services</a></li>
+                              <li><a href="#">About Us</a></li>
+                              <li><a href="#">Press</a></li>
+                              <li><a href="#">Projects</a></li>
+                              <li><a href="#">Privacy Policy</a></li>
+                           </div>
+                        </ul>
+                  </div>
                </div>
             </footer>
 
-         </div>
+         <!-- </div> -->
+
+         <script src="./js/script.js"></script>
       </body>
       </html>
