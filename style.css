@@ -818,6 +818,7 @@ h1{
       height: 444px;
       margin-left: 0px;
       margin-right: 0px;
+      box-sizing: content-box;
    }
 
    .project{
