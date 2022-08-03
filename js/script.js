@@ -21,20 +21,72 @@ function getJsonProjects(){
    fetch('https://jsonplaceholder.typicode.com/posts')
       .then((response) => response.json())
       .then((res) => {
+      
+         const recentProjects = document.querySelector(".cajas-global");
+
          res.forEach((data, index) => {
             if(index < 3) {
-               document.querySelector('.cajas-global').appendChild(document.querySelector('.cajas-global').innerHTML = `
-               <div class="caja-proyecto">
+               const newElement = document.createElement('div');
+               newElement.classList.add('caja-proyecto');
+               newElement.innerHTML = `
                   <img class="project" src="/img/recent-projects.jpeg" alt="Recent Projects">
                   <h4>${data.title}</h4>
                   <p>${data.body}</p>
-                  <a href="./project.html">Learn more</a>
-               </div>`);
+                  <a href="./project.html">Learn more</a>`;
+               
+               recentProjects.appendChild(newElement);
 
             }
          })
       });
 }
 
+function addPost(event) {
+   event.preventDefault(); 
+
+   let name = document.getElementById("nombre").value;
+   let email = document.getElementById("correo").value;
+   let phone = document.getElementById("movil").value;
+   let message = document.getElementById("mensaje").value;
+
+   fetch("https://jsonplaceholder.typicode.com/posts", {     
+   
+   method: "POST",
+   
+   body: JSON.stringify({
+      name: name,
+      email: email,
+      phone: phone,
+      message: message
+   }),
+   
+   headers: {
+      "Content-type": "application/json; charset=UTF-8"
+   }
+   })
+   .then((response) => {
+      
+      
+      if(response.status === 201){
+         const elementSuccess = document.querySelector('.post-success');
+         elementSuccess.style.display = "block";
+      
+         const elementForm = document.querySelector('.formulario');
+         elementForm.style.display = "none";
+      } else {
+         elementFailed = document.querySelector('.post-failed');
+         elementFailed.style.display = "block";
+      }
+
+      return response.json();
+
+   })
+   .then((data) => {
+      console.log(data);
+   });
+
+}
+
+document.getElementById("form-contact").addEventListener("submit", addPost);
 getJsonIndividual();
 getJsonProjects();

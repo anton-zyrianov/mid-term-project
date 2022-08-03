@@ -180,7 +180,8 @@ h1{
    width: 340px;
    margin: 0 20px;
    padding-bottom: 20px;
-   height: 444px;
+   display: flex;
+   flex-direction: column;
 }
 
 .project{
@@ -192,12 +193,15 @@ h1{
    color: #1037C8;
    font-weight: 500;
    padding-left: 20px;
+   padding-right: 20px;
 }
 
 .caja-proyecto h4{
    font-size: 24px;
    font-weight: 500;
    padding-left: 20px;
+   padding-right: 20px;
+   min-height: 105px;
 }
 
 .caja-proyecto p{
@@ -205,6 +209,8 @@ h1{
    color: #6B708D;
    padding-left: 20px;
    padding-bottom: 30px;
+   padding-right: 20px;
+   flex: 1 1 auto;
 }
 
 #review{
@@ -659,6 +665,24 @@ h1{
    font-size: 20px;
 }
 
+.submit:hover{
+   background-color: #292e47;
+}
+
+.post-success{
+   display: none;
+   padding: 20px;
+   text-align: center;
+   background-color: #dddddd;
+}
+
+.post-failed{
+   display: none;
+   padding: 10px;
+   text-align: center;
+   background-color: #ffdede;
+}
+
 .nav-row{
    display: none;
 }
@@ -815,10 +839,9 @@ h1{
       width: 100%;
       margin-top: 20px;
       padding-bottom: 20px;
-      height: 444px;
+      /* height: 444px; */
       margin-left: 0px;
       margin-right: 0px;
-      box-sizing: content-box;
    }
 
    .project{
