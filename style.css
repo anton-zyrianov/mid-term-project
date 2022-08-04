@@ -151,6 +151,7 @@ h1{
    max-width: 1100px;
    margin-left: auto;
    margin-right: auto;
+   padding: 0 30px;
 }
 
 .logos-empresas{
@@ -182,6 +183,7 @@ h1{
    padding-bottom: 20px;
    display: flex;
    flex-direction: column;
+   margin-top: 20px;
 }
 
 .project{
@@ -357,6 +359,7 @@ h1{
    max-width: 340px;
    display: flex;
    flex-direction: column;
+   margin: 0 20px;
 }
 
 .servicio-img-1{
@@ -446,7 +449,7 @@ h1{
    top: 27%;
 }
 
-.form-index input{
+#e-mail{
    max-width: 393px;
    height: 80px;
    margin-bottom: 0px;
@@ -597,7 +600,7 @@ h1{
 }
 
 .caja-margin{
-   margin-top: 70px;
+   margin-top: 50px;
 }
 
 
@@ -688,7 +691,7 @@ h1{
 }
 
 
-@media only screen and (max-width: 747px) {
+@media only screen and (max-width: 820px) {
    body.lock{
       overflow: hidden;
    }
@@ -800,13 +803,6 @@ h1{
       justify-items: center;
    }
 
-
-   .emoji-arriba-izquierda,
-   .emoji-abajo-izquierda,
-   .emoji-arriba-derecha,
-   .emoji-abajo-derecha{
-      display: none;
-   }
 
    .servicios-global{
       display: flex;
@@ -954,4 +950,35 @@ h1{
       
    }
 
+   .form-index{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .form-index button{
+      margin-top: 20px;
+   }
+
+   .questions-icono{
+      left: 20%;
+      top: 15%;
+   }
+
+}
+
+@media only screen and (max-width: 1000px) {  
+   .emoji-arriba-izquierda,
+   .emoji-abajo-izquierda,
+   .emoji-arriba-derecha,
+   .emoji-abajo-derecha{
+      display: none;
+   }
+}
+
+@media only screen and (max-width: 1150px) {  
+   .cajas-global{
+      flex-wrap: wrap;
+      justify-content: start;
+   }
 }
