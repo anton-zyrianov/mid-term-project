@@ -1,4 +1,4 @@
-### Mid-Term Project
+# Mid-Term Project
 
 First project done in Ironhack Front-end Bootcamp that consist in duplicate web of [Circle Agency](https://circle-agency-35d27e.webflow.io/).
 
