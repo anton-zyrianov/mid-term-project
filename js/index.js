@@ -8,6 +8,13 @@ buttonBurger.addEventListener('click', () => {
    lockScroll.classList.toggle('lock');
 });
 
+const buttonQuestions = document.getElementById('submit');
+const iconQuestions = document.querySelector('.questions-icono');
+
+buttonQuestions.addEventListener('click', () => {
+   iconQuestions.classList.toggle('clicked');
+});
+
 function getJsonProjects(){
    fetch('https://jsonplaceholder.typicode.com/posts')
       .then((response) => response.json())
@@ -31,5 +38,42 @@ function getJsonProjects(){
          })
       });
 }
+
+function sendEmail(event) {
+   event.preventDefault(); 
+
+   let mail = document.getElementById("e-mail").value;
+
+   fetch("https://jsonplaceholder.typicode.com/posts", {     
+   
+   method: "POST",
+   
+   body: JSON.stringify({
+      mail:mail,
+   }),
+   
+   headers: {
+      "Content-type": "application/json; charset=UTF-8"
+   }
+   })
+   .then((response) => {
+
+      if(response.status === 201){
+         const elementSuccess = document.querySelector('.questions-success');
+         elementSuccess.style.display = "block";
+
+      } else {
+         elementFailed = document.querySelector('.question-failed');
+         elementFailed.style.display = "block";
+
+      }
+
+      return response.json();
+
+   });
+
+}
+
+document.getElementById("form-index").addEventListener("submit", sendEmail);
 
 getJsonProjects();
