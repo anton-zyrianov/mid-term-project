@@ -446,12 +446,28 @@ h1{
    width: 30px;
    height: 30px;
    left: 4%;
-   top: 27%;
+   top: 32%;
 }
 
-/* .form-index{
-   max-width: 393px;
-} */
+.questions-success{
+   display: none;
+   padding: 20px;
+   text-align: center;
+   background-color: #dddddd;
+   margin-top: 10px;
+}
+
+.questions-failed{
+   display: none;
+   padding: 10px;
+   text-align: center;
+   background-color: #ffdede;
+   margin-top: 10px;
+}
+
+.form-index{
+   position: relative;
+} 
 
 #e-mail{
    max-width: 393px;
@@ -958,6 +974,7 @@ h1{
       display: flex;
       flex-direction: column;
       align-items: center;
+      position: relative;
    }
 
    .form-index button{
@@ -965,8 +982,17 @@ h1{
    }
 
    .questions-icono{
-      left: 20%;
+      left: 15%;
       top: 15%;
+   }
+
+   .questions-icono.clicked{
+      left: 30%;
+      top: 15%;
+   }
+
+   .caja-proyecto h4{
+      min-height: 0;
    }
 
 }
