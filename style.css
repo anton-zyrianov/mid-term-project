@@ -368,7 +368,7 @@ h1{
    border-radius: 50%;
    background-color: #ECF7FF;
    position: relative;
-   background-image: url(/img/1.svg);
+   background-image: url(img/1.svg);
    background-position: center;
    background-size: auto;
    background-repeat: no-repeat;
@@ -383,7 +383,7 @@ h1{
    border-radius: 50%;
    background-color: #ECF7FF;
    position: relative;
-   background-image: url(/img/2.svg);
+   background-image: url(img/2.svg);
    background-position: center;
    background-size: auto;
    background-repeat: no-repeat;
@@ -397,7 +397,7 @@ h1{
    border-radius: 50%;
    background-color: #ECF7FF;
    position: relative;
-   background-image: url(/img/3.svg);
+   background-image: url(img/3.svg);
    background-position: center;
    background-size: auto;
    background-repeat: no-repeat;
@@ -440,7 +440,7 @@ h1{
 
 .questions-icono{
    position: absolute;
-   background-image: url(/img/mail.svg);
+   background-image: url(img/mail.svg);
    background-position: center;
    background-repeat: no-repeat;
    width: 30px;
