@@ -36,7 +36,7 @@ function getJsonProjects(){
                const newElement = document.createElement('div');
                newElement.classList.add('caja-proyecto');
                newElement.innerHTML = `
-                  <img class="project" src="/img/recent-projects.jpeg" alt="Recent Projects">
+                  <img class="project" src="img/recent-projects.jpeg" alt="Recent Projects">
                   <h4>${data.title}</h4>
                   <p>${data.body}</p>
                   <a href="./project.html">Learn more</a>`;
